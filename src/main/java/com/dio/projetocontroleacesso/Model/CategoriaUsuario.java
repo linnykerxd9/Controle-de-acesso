@@ -1,5 +1,6 @@
 package com.dio.projetocontroleacesso.Model;
 
+
 import lombok.*;
 
 @Getter
@@ -8,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class jornadaTrabalho {
+public class CategoriaUsuario {
 
     private long id;
     private String  descricao;
