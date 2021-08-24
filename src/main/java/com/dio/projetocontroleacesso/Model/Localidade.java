@@ -2,7 +2,9 @@ package com.dio.projetocontroleacesso.Model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Id;
 
 
 @Getter
@@ -11,8 +13,10 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Localidade {
 
+    @Id
     private Long id;
 
     @ManyToOne
