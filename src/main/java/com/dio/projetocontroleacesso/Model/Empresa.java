@@ -3,6 +3,7 @@ package com.dio.projetocontroleacesso.Model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Getter
@@ -15,6 +16,7 @@ import javax.persistence.Id;
 public class Empresa {
 
     @Id
+    @GeneratedValue
     private Long id;
     private String descricao;
     private String cnpj;

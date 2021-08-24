@@ -26,7 +26,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.dio.projetocontroleacesso"))
-                .paths(PathSelectors.ant("/**"))
+                .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo())
                 .globalOperationParameters(
